@@ -32,4 +32,7 @@ A simple CLI tool to manage and validate parameters in ROS2 launch files
 ## Contribute
 Please use this code in your own projects and raise issue/make PR's. It would be great to have more eyes on this problem. 
 
+## Testnodes setup
+
+![Publisher Subscriber Topology](./launchassistant/src/images/pubSubTop.jpg)
 
