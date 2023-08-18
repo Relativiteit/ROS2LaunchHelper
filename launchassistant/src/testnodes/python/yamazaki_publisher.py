@@ -8,7 +8,7 @@ class yamazaki_broadcaster(Node): # MODIFY NAME
     def __init__(self):
         super().__init__("yamazaki_broadcaster") 
         self.number_ = 2
-        self.publisher_ = self.create_publisher(Int64, "yamazaki_broadcaster", 10)
+        self.publisher_ = self.create_publisher(Int64, "yamazaki", 10)
         self.number_timer_ = self.create_timer(1.0, self.publish_number)
         self.get_logger().info("yamazaki broadcaster has been started.")
 

@@ -6,11 +6,13 @@ from example_interfaces.msg import Int64
  
 class yamazaki_subscriber(Node): # MODIFY NAME
     def __init__(self):
-        super().__init__("yamazaki_broadcaster") 
+        super().__init__("yamazaki_receiver") 
         self.counter_
-        self.publisher_ = self.create_publisher(Int64, "yamazaki_subscriber", 10)
-        self.number_timer_ = self.create_timer(1.0, self.publish_number)
+        self.publisher_ = self.create_publisher(Int64, "yamazaki", self.callback_yamazaki, 10)
         self.get_logger().info("yamazaki subscriber has been started.")
+
+    def callback_yamazaki(self, msg):
+        self.get_logger().info(msg.data)
 
  
 def main(args=None):
