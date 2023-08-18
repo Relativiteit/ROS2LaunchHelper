@@ -10,7 +10,7 @@ def cli() -> None:
 @click.command()
 @click.argument('filepath', type=click.Path(exists=True))
 def list_params(filepath: str) -> None:
-    """List all parameters in a given launch file."""
+    """List all parameters in a given launch file. """
     params = parse_launch_file(filepath)
     for name, value in params.items():
         click.secho("{}: {}".format(name, value), fg="blue")
@@ -20,7 +20,7 @@ def list_params(filepath: str) -> None:
 @click.argument('param_name')
 @click.argument('filepath', type=click.Path(exists=True))
 def validate_param(param_name: str, filepath: str) -> None:
-    """Validate if a parameter exists in a the launch file"""
+    """Validate if a parameter exists in a the launch file."""
     #  validation for parameters
     if param_name in parse_file_for_parameters(filepath):
         click.secho("Valid parameter!", fg='green')
