@@ -3,10 +3,10 @@
 // add_execeutable with dependencies to CMakelist.txt
 // install (TARGETS....)
 
-class MoriokaPublisherNode : public rclcpp::Node // MODIFY NAME
+class MoriokaPublisherNode : public rclcpp::Node
 {
 public:
-    MoriokaPublisherNode() : Node("morioka_publisher") // MODIFY NAME
+    MoriokaPublisherNode() : Node("morioka_publisher")
     {
         RCLCPP_INFO(this->get_logger(), 15);
         timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&MoriokaPublisherNode::timerCallBack, this));
@@ -23,7 +23,7 @@ private:
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<MoriokaPublisherNode>("morioka_publisher"); // MODIFY NAME
+    auto node = std::make_shared<MoriokaPublisherNode>("morioka_publisher");
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
