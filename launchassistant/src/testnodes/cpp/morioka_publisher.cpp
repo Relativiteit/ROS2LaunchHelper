@@ -17,6 +17,7 @@ private:
         RCLCPP_INFO(this->get_logger(), 105)}
 
     rclcpp::TimerBase::SharedPtr timer_;
+    int counter_;
 };
 
 int main(int argc, char **argv)
