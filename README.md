@@ -5,11 +5,10 @@ A simple CLI tool to manage and validate parameters in ROS2 launch files
 
 - List all parameters from a given launch file. 
 - Validate if a parameter exists in a launch file.
-- (Any other features you implement)
 
 ## Prerequisites
 - Python 3.x
-- ROS2 (specify the distributions supported if applicable)
+- ROS2 Foxy or Humble
 - (Any other dependencies or requirements)
 
 ## Installation
