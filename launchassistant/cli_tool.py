@@ -33,7 +33,6 @@ cli.add_command(validate_param)
 
 
 ### Helper Functions ###
-
 def parse_launch_file(filepath: str) -> Dict[str, str]:
     """Parse ROS2 launch file to exxtract parameters."""
     tree = ET.parse(filepath)
