@@ -1,0 +1,21 @@
+launch:
+
+- node:
+    pkg: "cpp"
+    exec: "morioka_publisher"
+    name: "morioka_pub"
+- node:
+    pkg: "cpp"
+    exec: "morioka_subscriber"
+    name: "morioka_sub"
+- node:
+    pkg: "cpp"
+    exec: "saitama_broadcaster"
+    name: "saitama_broadcaster"
+
+- node:
+    pkg: "cpp"
+    exec: "saitama_receiver"
+    name: "saitama_receiver"
+
+      

@@ -27,7 +27,7 @@ install(TARGETS
       morioka_publisher
       morioka_subscriber
       saitama_broadcaster
-      saitama_broadcaster
+      saitama_receiver
       DESTIONATION lib/${PROJECT_NAME}
       )
 ament_package()
