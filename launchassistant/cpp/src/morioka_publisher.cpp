@@ -8,16 +8,22 @@ class MoriokaPublisherNode : public rclcpp::Node
 public:
     MoriokaPublisherNode() : Node("morioka_publisher")
     {
-
-        RCLCPP_INFO(this->get_logger(), 15);
-        timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&MoriokaPublisherNode::timerCallBack, this));
-        // create publisher type STRING
+        publisher_ = this->create_publisher<example_interfaces::msg::String>("morioka", 10)
+                         timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&MoriokaPublisherNode::timerCallBack, this));
+        RCLCPP_INFO(this->get_logger(), "The Morioka Publisher has started");
     }
 
 private:
-    void timerCallBack(){
-        RCLCPP_INFO(this->get_logger(), 105)}
+    void timerCallBack()
+    {
+        RCLCPP_INFO(this->get_logger(), 105)
+    }
 
+    void publishJajamen()
+    {
+        auto msg = example_interfaces::msg::String();
+        msg.data = std::string("O")
+    }
     rclcpp::TimerBase::SharedPtr timer_;
     int counter_;
 };

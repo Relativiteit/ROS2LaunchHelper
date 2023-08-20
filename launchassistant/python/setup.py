@@ -20,6 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "yamazaki_publisher = python.yamazaki_publisher:main",
+            "yamazaki_subscriber = python.yamazaki_subscriber:main",
+            "beppi_pubsub = python.beppi_pubsub:main",
+
+
         ],
     },
 )
