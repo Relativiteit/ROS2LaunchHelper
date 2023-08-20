@@ -36,3 +36,7 @@ Please use this code in your own projects and raise issue/make PR's. It would be
 
 ![Publisher Subscriber Topology](./launchassistant/src/images/pubSubTop.jpg)
 
+
+## Setup
+Don't forget to source the bash.rc file and check if everything is added to this file with nano, vim or vscode.
+
