@@ -41,5 +41,6 @@ Please use this code in your own projects and raise issue/make PR's. It would be
 Don't forget to source the bash.rc file and check if everything is added to this file with nano, vim or vscode.
 
 ## TODO
-- fix code structure to fit digram 
-- create launch files 
+- fix code structure to fit diagram 
+- test launch files
+- create function to parse through .yaml files in cli_tool
