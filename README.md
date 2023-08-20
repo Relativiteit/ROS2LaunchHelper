@@ -40,3 +40,6 @@ Please use this code in your own projects and raise issue/make PR's. It would be
 ## Setup
 Don't forget to source the bash.rc file and check if everything is added to this file with nano, vim or vscode.
 
+## TODO
+- fix code structure to fit digram 
+- create launch files 
