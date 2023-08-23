@@ -44,3 +44,4 @@ Don't forget to source the bash.rc file and check if everything is added to this
 - fix code structure to fit diagram 
 - test launch files
 - create function to parse through .yaml files in cli_tool
+- for poc create new branch with 1 node, 1 launch file yaml(with params) in 1 package properly built and running. 
