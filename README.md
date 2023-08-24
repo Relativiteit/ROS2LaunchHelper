@@ -45,3 +45,10 @@ Don't forget to source the bash.rc file and check if everything is added to this
 - test launch files
 - create function to parse through .yaml files in cli_tool
 - for poc create new branch with 1 node, 1 launch file yaml(with params) in 1 package properly built and running. 
+
+## New Branch POC branch 
+- Create 1 node publisher 
+- Create 1 node subscriber 
+- Create 1 launchfile
+- Create 1 package 
+- Create 1 click method to parse the launch file 
